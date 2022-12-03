@@ -1,0 +1,314 @@
+@font-face{
+    font-family: 'Monserrat';
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'Monserrat-light';
+    src: url(./assets/fonts/Montserrat-Light.ttf);
+    font-weight: light;
+}
+
+body{
+    font-family: 'Monserrat';
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+header{
+    margin: 0 3% 20% 3%;
+    max-width: 100%;
+}
+
+footer{
+    margin-top: 5%;
+}
+
+/*HEADER*/
+
+
+.idiomas{
+    font-family: 'Monserrat-light';
+    text-align: center;
+    margin: 40px 0 30px 0;
+    font-size: 14px;
+}
+
+.idiomas a{
+    margin: 0 13px 0 13px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.header-container i{
+    font-size: 30px;
+}
+
+.menu-list-container{
+    display: none;
+}
+
+
+.logo{
+    min-width: 80%;
+    width: 60%;
+}
+
+
+/*Portada*/
+
+.portada-img{
+    max-width: 100%;
+}
+
+/*Main*/
+
+.bipedos{
+    margin-top: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.otros-productos{
+    width: 100%;
+    text-align: center;
+}
+
+.section-title{
+text-align: center;
+font-size: 40px;
+font-family: 'Monserrat-light';
+}
+
+.products{
+    display: inline-block;
+    margin: 20px;
+
+}
+
+.product-img{
+    max-width: 80%;
+}
+
+.product-name{
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.product-description{
+    font-size: 15px;
+}
+
+
+/*Footer*/
+
+.footer-container{
+    display: none;
+    margin-bottom: 2%;
+}
+
+.footer-copyright{
+    color: gray;
+    text-align: center;
+    font-size: 8px;
+    font-family: 'Monserrat-light';
+    border-top: 1px solid lightgray;
+}
+
+.footer-link a{
+    color: grey;
+}
+/* 
+hasta 767px
+desde 768px hasta 1023px
+dessde 1024 hasta 1279
+desde 1280
+*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .products{
+        width: 40%;
+        margin: 20px;
+    }
+
+    .product-img{
+        width: 80%;
+
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px){
+    
+    .idiomas{
+        text-align: end;
+        margin: 2vw;
+    }
+    
+    .logo{
+        min-width: 30%;
+        width: 30%;
+    }
+   
+    .menu-list-container{
+        display: block;
+        
+    }
+    .menu-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .menu-list-item {
+        display: inline-block;
+        
+        
+    }
+
+    .fa-bag-shopping{
+        margin: 0 20px;
+    }
+    
+    .menu-list-item a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Monserrat';
+        font-weight: bolder;
+        font-size: 15px;
+        margin: 0 10px;
+        
+    }
+
+    .icon-menu-bars{
+        display: none;
+    }
+  
+    .products{
+        width: 28%;
+        margin: 20px;
+    }
+
+    .product-img{
+        width: 80%;
+
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .footer-column-list{
+        display: inline;
+    }
+
+
+    .footer-title{
+        font-size: 12px;
+        
+    }
+
+    .footer-link{
+        font-size: 8px;
+        list-style: none;
+        line-height: 20px;
+       
+    }
+}
+
+@media screen and (min-width:1280px){
+    .idiomas{
+        text-align: end;
+        margin: 20px;
+    }
+    
+    .logo{
+        min-width: 30%;
+        width: 30%;
+    }
+   
+    .menu-list-container{
+        display: block;
+        
+    }
+    .menu-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    .menu-list-item {
+        display: inline-block;
+        
+        
+    }
+
+    .fa-bag-shopping{
+        margin: 0 20px;
+    }
+    
+    .menu-list-item a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Monserrat';
+        font-weight: bolder;
+        font-size: 17px;
+        margin: 0 20px;
+        
+    }
+
+    .icon-menu-bars{
+        display: none;
+    }
+  
+    .products{
+        width: 20%;
+        margin: 10px;
+    }
+
+    .product-img{
+        width: 80%;
+
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer-column{
+        margin: 0 auto;
+    }
+
+    .footer-column-list{
+        display: inline;
+        margin: 0;
+    }
+
+
+    .footer-title{
+        font-size: 12px;
+        
+    }
+
+    .footer-link{
+        font-size: 8px;
+        list-style: none;
+        line-height: 20px;
+       
+    }
+}
+
+
+
